@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitelabel Error Page - Stack Trace Recreated</title>
+    <style>
+        /* ページ全体のスタイル */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px; /* 全体に少しパディング */
+        }
+
+        /* 見出し（H1）のスタイル */
+        h1 {
+            font-size: 40px;
+            font-weight: 2px; /* フォントの太さを標準に */
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* 一般的なパラグラフのスタイル */
+        p {
+            margin-bottom: 10px;
+        }
+
+        /* 水平線のスタイル */
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+
+        /* エラー詳細リスト（DL）のスタイル */
+        dl {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 定義用語（DT: Key）のスタイル */
+        dt {
+            float: left;
+            clear: left;
+            font-weight: bold;
+            width: 150px; /* Keyの幅を固定 */
+            margin-top: 5px;
+        }
+
+        /* 定義の説明（DD: Value）のスタイル */
+        dd {
+            margin-left: 160px; /* Keyの幅の分だけ右に移動 */
+            margin-bottom: 5px;
+            word-wrap: break-word;
+        }
+
+        /* スタックトレースのスタイル */
+        pre {
+            background-color: #f7f7f7; /* 背景色を少しグレーに */
+            border: 1px solid #eee;
+            padding: 15px;
+            margin-top: 20px;
+            overflow-x: auto; /* 横に長い場合にスクロールバーを表示 */
+            font-family: 'Lucida Console', 'Consolas', 'Courier New', monospace; /* 等幅フォント */
+            font-size: 13px; /* 少し小さめのフォントサイズ */
+            line-height: 1.4; /* 行間を調整 */
+            white-space: pre-wrap; /* 必要に応じて改行を許可 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Whitelabel Error Page</h1>
+    <p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>
+
+    <p>Tue Nov 11 09:26:14 JST 2025</p>
+    <p>There was an unexpected error (type=Not Found, status=404).</p>
+    <p>No static resource joindirect.</p>
+
+    <p>
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource joindirect.
+    at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+    at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+    at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+    at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+    at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+    at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+    at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+    at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+    at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+    at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+    at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+    at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+    at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+    at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+    at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+    at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+    at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+    at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+    at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+    at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:240)
+    at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+    at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+    at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+    at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+    at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+    at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+    at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+    at org.apache.coyote.Abstract  ProcessorLight.process(AbstractProcessorLight.java:60)
+    at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+    at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+    at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+    at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+    at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+    at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+    at java.base/java.lang.Thread.run(Thread.java:840)
+    </p>
+</body>
+</html>
